@@ -1,0 +1,21 @@
+Phân tích 
+1. Vì from math import * sẽ gom hết tết cả các hàm module, khiến người dùng ko kiểm soát được hàm nào, dễ xung đột với hàm khác
+Giải pháp
+Cách 1: import math dùng gọi math.sqrt()
+Cách 2: from math import sqrt
+
+2. Để biến một thư mục thông thường thành một Package trong Python, ta cần tệp __init__.py
+Vai trò: thông báo hệ thống biết thư mục này chứa các module và cần được đối xử như một Package để có thể import qua lại
+
+3. Sơ đồ cấu trúc cây thư mục
+├── session23_ex01/
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── geo_calculator.py
+│   │   └── time_estimator.py
+│   ├── utils/
+│   │   └── __init__.py
+│   └── file_helper.py
+|
+├── main.py
+└── phan tich.txt
