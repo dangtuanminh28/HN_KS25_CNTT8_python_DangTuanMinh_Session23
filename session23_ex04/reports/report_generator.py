@@ -1,5 +1,6 @@
 from datetime import datetime
 from utils.score_utils import calculate_average
+from colorama import Fore, Style
 
 def display_student_scores(records: list):
     """Chức năng 1: Xem danh sách sinh viên"""
@@ -59,4 +60,5 @@ def export_learning_report(records: list):
         file.write(f"Số sinh viên đạt yêu cầu: {passed_count}\n")
         file.write(f"Số sinh viên cần cải thiện: {failed_count}\n")
         
-    print(">> Đã xuất báo cáo ra file learning_report.txt")
+    report_color = Fore.GREEN + Style.BRIGHT + ">> Đã xuất báo cáo ra file learning_report.txt" + Style.RESET_ALL
+    print(report_color)

@@ -1,5 +1,5 @@
 ===== BÁO CÁO KẾT QUẢ HỌC TẬP =====
-Thời gian khởi tạo: 2026-06-23 21:29:15
+Thời gian khởi tạo: 2026-06-23 21:32:44
 Tổng số sinh viên: 3
 Số sinh viên đạt yêu cầu: 2
 Số sinh viên cần cải thiện: 1
