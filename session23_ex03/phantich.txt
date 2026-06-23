@@ -1,0 +1,16 @@
+1.
+session23_ex03/
+│
+├── core/
+│   ├── __init__.py
+│   └── manager.py
+│
+├── utils/
+│   ├── __init__.py
+│   ├── time_helper.py
+│   └── file_helper.py
+|
+├── main.py
+└── phan tich.txt
+
+2. from math import * sẽ gom hết tết cả các hàm module, khiến người dùng ko kiểm soát được hàm nào, dễ xung đột với hàm khác
