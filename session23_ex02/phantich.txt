@@ -1,0 +1,20 @@
+Phân tích
+1. from datetime import * sẽ gom hết tết cả các hàm module, khiến người dùng ko kiểm soát được hàm nào, dễ xung đột với hàm khác
+ Nếu trong mã nguồn có một biến global tên là time = 120 thì dòng from datetime import * ghi đè lên biến time sau đó đến print(time + 5) sẽ sập luôn vì ko thể cộng với số nguyên
+
+2. Hàm os.makedirs(path, exist_ok=True) tối ưu hơn os.mkdir(). Vì os.mkdir() chỉ cho tạo 1 tầng thư mục mà os.makedirs() cho phép tạo 1 chuỗi thư mục
+
+3. Sơ đồ cấu trúc cây thư mục
+├── session23_ex02
+├── │
+├── ├── storage/
+├── │   ├── __init__.py
+├── │   ├── disk_manager.py
+├── │   └── io_helper.py
+├── │
+├── ├── analytics/
+├── │   ├── __init__.py
+├── │   └── time_validator.py
+|
+├── main.py
+└── phan tich
